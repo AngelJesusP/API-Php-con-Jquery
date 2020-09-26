@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busquedas | Desarrollo Web</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand ml-3 text-white" href="#">[ MESA DE AYUDA ]</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active text-white" href="index.html">&#128195; menu principal</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="List.html">&#128195; Listar</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="remove.html">&#128465; Eliminar</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="update.html">&#128195; Actualizar</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="card mt-4 ml-3 bg-dark">
+                <div class="card-body">
+                    <div class="form-row">    
+                        <div class="form-group col-md-6">
+                            <label for="idBuscar" class="text-white">BUSCAR:</label>
+                            <input type="text" class="form-control" id="idBuscar" placeholder="buscar por ID">
+                        </div>
+                    </div>
+                    
+                    <hr class="text-white">
+                    <div class="form-row">    
+                        <div class="form-group col-md-6">
+                            <label for="dependencia" class="text-white">Dependencia:</label>
+                            <input type="text" class="form-control" id="dependencia" placeholder="Digite la dependecia">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="tipo" class="text-white">Tipo:</label>
+                            <select id="tipo" class="form-control">
+                                <option>Estudiante</option>
+                                <option>Docente</option>
+                                <option>Administrativo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre" class="text-white">Nombres</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Digite el nombre">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="apellido" class="text-white">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Digite los apellidos">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="asunto" class="text-white">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" placeholder="Digite el asunto">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="descripcion" class="text-white">Descripcion</label>
+                            <textarea class="form-control" id="descripcion" placeholder="Descripcion..." rows="3"></textarea>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/jquery-3.5.1.js"></script>
+    <script src="Js/appSearch.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update | Desarrollo web</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand ml-3 text-white" href="#">[ MESA DE AYUDA ]</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active text-white" href="index.html">&#128195; menu principal</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="List.html">&#128195; Listar</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="remove.html">&#128465; Eliminar</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="search.html">&#128269; Buscar</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <div class="col-sm-4">
+            <div class="card mt-3 mr-1">
+                <div class="card-header bg-dark text-center">
+                    <label class="text-white">DATOS PARA ACTUALIZAR</label>
+                </div>
+                <div class="card-body">
+                    <input type="text" name="dependencia" id="dependencia" class="form-control" placeholder="DEPENDENCIA" required>
+                    <br>
+                    <select id="tipo" class="form-control">
+                        <option>Estudiante</option>
+                        <option>Docente</option>
+                        <option>Administrativo</option>
+                    </select>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="NOMBRE" required>
+                    <br>
+                    <input type="text" name="apellido" id="apellido" class="form-control" placeholder="APELLIDO" required>
+                    <br>
+                    <input type="text" name="asunto" id="asunto" class="form-control" placeholder="ASUNTO" required>
+                    <br>
+                    <button class="btn btn-info w-50" id="btnUpdate">ACTUALIZAR</button>
+                    <input type="hidden" value="" id="idCodigo">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-hover w-100 mt-3 mr-1" id="tabla" style="cursor: pointer;">
+                <thead class="bg-dark">
+                    <tr class="text-white">
+                        <th>CODIGO</th>
+                        <th>DEPENDENCIA</th>
+                        <th>TIPO</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>ASUNTO</th>
+                        <th>DESCRIPCION</th>
+                    </tr>
+                </thead>
+                <tbody class="table-light" id="cuerpoTable"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Js/jquery-3.5.1.js"></script>
+    <script src="Js/sweetalert2@10.js"></script>
+    <script src="Js/appUpdate.js"></script>
+
+</body>
+</html>

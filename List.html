@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand ml-3 text-white" href="#">[ MESA DE AYUDA ]</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active text-white" href="create.html">&#128195; Crear</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="index.html">&#128195; Principal</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="remove.html">&#128465; Eliminar</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="update.html">&#128260; Actualizar</a>
+                <a class="nav-item nav-link ml-4 active text-white" href="search.html">&#128269; Buscar</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-md-12">
+            <table class="table table-hover w-100 mt-5">
+                <thead class="bg-dark">
+                    <tr class="text-white">
+                        <th># CODIGO</th>
+                        <th>DEPENDENCIA</th>
+                        <th>TIPO</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>ASUNTO</th>
+                        <th>DESCRIPCION</th>
+                    </tr>
+                </thead>
+                <tbody class="table-light" id="cuerpoTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Js/jquery-3.5.1.js"></script>
+    <script src="Js/appList.js"></script>
+</body>
+</html>
